@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagement.StudentController">
+    <children>
+        <TextField fx:id="txtName" layoutX="41.0" layoutY="100.0" prefHeight="27.0" prefWidth="216.0" promptText="Studdent Name" />
+        <TextField fx:id="txtAddress" layoutX="41.0" layoutY="159.0" prefHeight="27.0" prefWidth="216.0" promptText="Address" />
+        <Button layoutX="163.0" layoutY="265.0" mnemonicParsing="false" onAction="#addStudent" text="Add Student" />
+        <Text fx:id="errors" fill="#da1414" layoutX="41.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+        <TextField fx:id="txtPhone" layoutX="41.0" layoutY="215.0" prefHeight="27.0" prefWidth="216.0" promptText="Phone" />
+      <TextField fx:id="txtStudentId" layoutX="41.0" layoutY="51.0" prefHeight="31.0" prefWidth="216.0" promptText="Student Id" />
+      <Text layoutX="284.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Student Management">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <ListView fx:id="lvStudent" layoutX="314.0" layoutY="106.0" prefHeight="165.0" prefWidth="387.0" />
+      <Text layoutX="322.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id" />
+      <Text layoutX="417.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Studdent Name" />
+      <Text layoutX="541.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="628.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+    </children>
+</Pane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.thanh_vien.edit.TVEditController">
+    <children>
+        <Text layoutX="251.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit ">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRole" layoutX="152.0" layoutY="125.0" prefHeight="41.0" prefWidth="272.0" promptText="Role...">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtSalary" layoutX="152.0" layoutY="200.0" prefHeight="41.0" prefWidth="272.0" promptText="Salary">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Button onAction="#submit" layoutX="315.0" layoutY="300.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="Submit" textFill="#b92020">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button onAction="#backList" layoutX="31.0" layoutY="16.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+        <Button onAction="#delete" layoutX="152.0" layoutY="300.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" text="Delete" textFill="#e40505" />
+    </children>
+</Pane>

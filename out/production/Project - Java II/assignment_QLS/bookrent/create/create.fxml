@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment_QLS.bookrent.create.BookRentCreateController">
+   <children>
+      <Text layoutX="223.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Rent">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="142.0" layoutY="80.0" prefHeight="31.0" prefWidth="245.0" promptText="Select Book" fx:id="cbBooks" />
+      <ComboBox layoutX="142.0" layoutY="151.0" prefHeight="31.0" prefWidth="245.0" promptText="Select student" fx:id="cbStudent" />
+      <DatePicker layoutX="142.0" layoutY="230.0" prefHeight="31.0" prefWidth="245.0" promptText="Expired at"  fx:id="dpExpired"/>
+      <Button layoutX="300.0" layoutY="307.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="97.0" text="Submit" onAction="#submit" />
+   </children>
+</Pane>

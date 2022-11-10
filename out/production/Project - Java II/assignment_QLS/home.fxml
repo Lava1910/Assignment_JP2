@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" fx:controller="assignment_QLS.HomeController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="85.0" layoutY="66.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="207.0" onAction="#goToBookList" text="Books" />
+      <Button layoutX="61.0" layoutY="200.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="239.0" text="Rents" onAction="#goToRent" />
+      <Button layoutX="329.0" layoutY="82.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="167.0" onAction="#goToStudentList" text="Students">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
