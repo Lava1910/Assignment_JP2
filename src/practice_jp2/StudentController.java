@@ -63,5 +63,8 @@ public class StudentController implements Initializable {
         Platform.exit();
         System.exit(0);
     }
+
+    public void save(ActionEvent actionEvent) {
+    }
 }
 
