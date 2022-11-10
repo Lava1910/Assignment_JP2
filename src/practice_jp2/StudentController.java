@@ -1,4 +1,4 @@
-package studentmanagement;
+package practice_jp2;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -1,4 +1,4 @@
-package studentmanagement;
+package practice_jp2;
 
 public class Student {
     private String id;

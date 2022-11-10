@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagement.StudentController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practice_jp2.StudentController">
     <children>
         <TextField fx:id="txtName" layoutX="41.0" layoutY="100.0" prefHeight="27.0" prefWidth="216.0" promptText="Studdent Name" />
         <TextField fx:id="txtAddress" layoutX="41.0" layoutY="159.0" prefHeight="27.0" prefWidth="216.0" promptText="Address" />
