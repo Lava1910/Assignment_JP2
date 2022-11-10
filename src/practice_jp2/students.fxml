@@ -11,7 +11,7 @@
         <TextField fx:id="txtAddress" layoutX="41.0" layoutY="159.0" prefHeight="27.0" prefWidth="216.0" promptText="Address" />
         <Button layoutX="163.0" layoutY="265.0" mnemonicParsing="false" onAction="#addStudent" text="Add Student" />
         <Button layoutX="100.0" layoutY="265.0" mnemonicParsing="false" onAction="#save" text="Save" />
-        <Button layoutX="100.0" layoutY="265.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+        <Button layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
         <Text fx:id="errors" fill="#da1414" layoutX="41.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
         <TextField fx:id="txtPhone" layoutX="41.0" layoutY="215.0" prefHeight="27.0" prefWidth="216.0" promptText="Phone" />
       <TextField fx:id="txtStudentId" layoutX="41.0" layoutY="51.0" prefHeight="31.0" prefWidth="216.0" promptText="Student Id" />
