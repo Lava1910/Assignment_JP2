@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment_jp2.HomeController">
+   <children>
+      <Text  fill="#d03333" layoutX="172.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of students" textAlignment="CENTER">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Text>
+      <Button fx:id="display" onAction="#goToStudentList" alignment="CENTER" layoutX="507.0" layoutY="163.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="244.0" text=" Display student records" textAlignment="CENTER" textFill="#3068f4" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" onAction="#createNewStudent" alignment="CENTER" layoutX="178.0" layoutY="163.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="244.0" text=" Add student records" textAlignment="CENTER" textFill="#3068f4" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" onAction="#save" alignment="CENTER" layoutX="178.0" layoutY="326.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="244.0" text="Save" textAlignment="JUSTIFY" textFill="#3068f4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit"  onAction="#exit" alignment="CENTER" layoutX="507.0" layoutY="326.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="244.0" text="Exit" textAlignment="JUSTIFY" textFill="#3068f4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

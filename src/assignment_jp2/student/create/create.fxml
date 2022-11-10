@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment_jp2.student.create.CreateController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="293.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new Student">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtID" layoutX="355.0" layoutY="112.0" prefHeight="51.0" prefWidth="217.0" promptText="Student ID" />
+      <TextField fx:id="txtName" layoutX="355.0" layoutY="187.0" prefHeight="51.0" prefWidth="217.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="355.0" layoutY="257.0" prefHeight="51.0" prefWidth="217.0" promptText="Address" />
+      <TextField fx:id="txtPhone" layoutX="355.0" layoutY="324.0" prefHeight="51.0" prefWidth="217.0" promptText="Phone" />
+      <Button layoutX="75.0" layoutY="69.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="31.0" prefWidth="76.0" text="&lt;&lt;Back" />
+      <Button layoutX="616.0" layoutY="368.0" mnemonicParsing="false" onAction="#submit" prefHeight="59.0" prefWidth="91.0" text="Submit" />
+      <Text layoutX="188.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="188.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="188.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+
+      <Text layoutX="188.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

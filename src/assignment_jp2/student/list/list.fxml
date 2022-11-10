@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment_jp2.student.list.ListController">
+    <children>
+        <Text fill="#ee0b0b" layoutX="403.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+        <Button layoutX="40.0" layoutY="67.0" mnemonicParsing="false" onAction="#backToMenu" text="&lt;&lt;Back" />
+        <Button layoutX="740.0" layoutY="67.0" mnemonicParsing="false" onAction="#createNewStudent" text="New Student" />
+        <TableView fx:id="tbStudent" layoutX="36.0" layoutY="139.0" prefHeight="210.0" prefWidth="810.0">
+            <columns>
+                <TableColumn fx:id="tdID" prefWidth="109.0" text="Student ID" />
+                <TableColumn fx:id="tdName" prefWidth="324.0" text="Student Name" />
+                <TableColumn fx:id="tdAddress" prefWidth="194.0" text="Address" />
+                <TableColumn fx:id="tdPhone" prefWidth="182.0" text="Phone" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
