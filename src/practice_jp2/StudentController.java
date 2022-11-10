@@ -1,5 +1,6 @@
 package practice_jp2;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -56,6 +57,11 @@ public class StudentController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         lvStudent.setItems(list);
+    }
+
+    public void exit(ActionEvent actionEvent) {
+        Platform.exit();
+        System.exit(0);
     }
 }
 
