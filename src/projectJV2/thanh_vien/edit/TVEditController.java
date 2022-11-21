@@ -52,7 +52,7 @@ public class TVEditController implements Initializable {
     public void backList(ActionEvent actionEvent) throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("../list/thanhvien.fxml"));
         Main.rootStage.setTitle("member");
-        Main.rootStage.setScene(new Scene(listChi,800,600));
+        Main.rootStage.setScene(new Scene(listChi,779,588));
     }
 
     public void delete(ActionEvent actionEvent) {

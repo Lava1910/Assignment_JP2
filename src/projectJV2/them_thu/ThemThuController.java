@@ -18,7 +18,7 @@ public class ThemThuController {
     public void backToThuThang() throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/thanh_vien/list/ThanhVien.fxml"));
         Main.rootStage.setTitle("Thành Viên");
-        Main.rootStage.setScene(new Scene(listChi,800,600));
+        Main.rootStage.setScene(new Scene(listChi,779,588));
     }
 
     public void submmit(ActionEvent actionEvent) {

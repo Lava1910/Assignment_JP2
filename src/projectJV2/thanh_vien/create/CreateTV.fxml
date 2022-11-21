@@ -5,28 +5,42 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.thanh_vien.create.CreateTVController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="779.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.thanh_vien.create.CreateTVController">
     <children>
-        <Text layoutX="265.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+        <Text fill="#dd0f0f" layoutX="246.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm thành viên" underline="true">
             <font>
-                <Font size="23.0" />
+                <Font name="Arial Bold" size="36.0" />
             </font>
         </Text>
-        <TextField fx:id="txtRole" layoutX="163.0" layoutY="143.0" prefHeight="41.0" prefWidth="272.0" promptText="Role...">
+        <TextField fx:id="txtRole" layoutX="358.0" layoutY="192.0" prefHeight="41.0" prefWidth="272.0" promptText="Bố">
             <font>
                 <Font size="16.0" />
             </font>
         </TextField>
-        <TextField fx:id="txtSalary" layoutX="163.0" layoutY="221.0" prefHeight="41.0" prefWidth="272.0" promptText="Salary...">
+        <TextField fx:id="txtSalary" layoutX="358.0" layoutY="266.0" prefHeight="41.0" prefWidth="272.0" promptText="15000000">
             <font>
                 <Font size="16.0" />
             </font>
         </TextField>
-        <Button layoutX="249.0" layoutY="305.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="109.0" text="Submit" textFill="#b92020">
+        <Button layoutX="521.0" layoutY="354.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Lưu" textFill="#ddf15d">
             <font>
-                <Font size="16.0" />
+                <Font name="Arial Bold" size="18.0" />
             </font>
         </Button>
-        <Button layoutX="31.0" layoutY="16.0" mnemonicParsing="false" onAction="#backListTV" text="&lt;&lt; Back" />
+        <Button layoutX="92.0" layoutY="122.0" mnemonicParsing="false" onAction="#backListTV" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Back" textFill="#ddf15d">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+      <Text layoutX="188.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="188.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu nhập">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
     </children>
 </Pane>

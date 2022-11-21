@@ -37,6 +37,6 @@ public class CreateTVController {
     public void backListTV() throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("../list/thanhvien.fxml"));
         Main.rootStage.setTitle("member");
-        Main.rootStage.setScene(new Scene(listChi,800,600));
+        Main.rootStage.setScene(new Scene(listChi,779,588));
     }
 }
