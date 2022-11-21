@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.residual.ResidualController">
+   <children>
+      <Text layoutX="172.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Dư Của Gia Đình" wrappingWidth="287.49609375">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="31.0" layoutY="25.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="25.0" prefWidth="70.0" text="&lt;&lt;Back" />
+      <Text layoutX="147.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng Thu : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTongThu1" layoutX="316.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng Chi :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTongChi1" layoutX="322.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Dư : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtsodu1" layoutX="322.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

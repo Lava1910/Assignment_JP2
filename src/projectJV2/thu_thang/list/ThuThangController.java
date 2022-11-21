@@ -30,10 +30,12 @@ public class ThuThangController implements Initializable {
     public TableColumn<ThuThang,Integer> tdIncome;
     public TableColumn<ThuThang, Date> tdDate;
     public TableColumn<ThuThang,Button> tdEdit;
+    public TableColumn<ThuThang,Integer> tdRoleId;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tdId.setCellValueFactory(new PropertyValueFactory<ThuThang,Integer>("id"));
+        tdRoleId.setCellValueFactory(new PropertyValueFactory<ThuThang,Integer>("roleid"));
         tdRole.setCellValueFactory(new PropertyValueFactory<ThuThang,String>("role"));
         tdIncome.setCellValueFactory(new PropertyValueFactory<ThuThang,Integer>("income"));
         tdDate.setCellValueFactory(new PropertyValueFactory<ThuThang,Date>("date"));
@@ -45,15 +47,15 @@ public class ThuThangController implements Initializable {
         tbThuThang.setItems(ls);
     }
 
-    public void backToHome2(ActionEvent actionEvent) throws Exception{
-        Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/Home.fxml"));
+    public void backToHome(ActionEvent actionEvent) throws Exception{
+        Parent listChi = FXMLLoader.load(getClass().getResource("../../Home.fxml"));
         Main.rootStage.setTitle("Quản Lý Chi Tieu");
-        Main.rootStage.setScene(new Scene(listChi,600,400));
+        Main.rootStage.setScene(new Scene(listChi,625,573));
     }
 
-    public void addChiThang(ActionEvent actionEvent) throws Exception{
-        Parent listThu = FXMLLoader.load(getClass().getResource("/projectJV2/them_chi/themchithang/themthuthang.fxml"));
+    public void addThemThu2(ActionEvent actionEvent) throws Exception{
+        Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/them_thu/themthu.fxml"));
         Main.rootStage.setTitle("Thêm Khoản Thu");
-        Main.rootStage.setScene(new Scene(listThu,800,600));
+        Main.rootStage.setScene(new Scene(listChi,800,600));
     }
 }

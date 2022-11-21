@@ -27,7 +27,7 @@ public class ThanhVien {
         this.edit.setOnAction((event) -> {
             try {
                 TVEditController.editedTV = this;
-                Parent edit = FXMLLoader.load(getClass().getResource("../thanh_vien/edit/edit.fxml"));
+                Parent edit = FXMLLoader.load(getClass().getResource("../thanh_vien/edit/EditTV.fxml"));
                 Main.rootStage.setScene(new Scene((edit), 800, 600));
             }catch (Exception e){
             }

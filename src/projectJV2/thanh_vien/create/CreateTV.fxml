@@ -5,28 +5,28 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:controller="projectJV2.thanh_vien.create.CreateTVController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.thanh_vien.create.CreateTVController">
     <children>
-        <Text layoutX="210.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="add">
+        <Text layoutX="265.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
             <font>
                 <Font size="23.0" />
             </font>
         </Text>
-        <TextField fx:id="txtRole" layoutX="168.0" layoutY="104.0" prefHeight="41.0" prefWidth="272.0" promptText="Role...">
+        <TextField fx:id="txtRole" layoutX="163.0" layoutY="143.0" prefHeight="41.0" prefWidth="272.0" promptText="Role...">
             <font>
                 <Font size="16.0" />
             </font>
         </TextField>
-        <TextField fx:id="txtSalary" layoutX="164.0" layoutY="233.0" prefHeight="41.0" prefWidth="272.0" promptText="Salary...">
+        <TextField fx:id="txtSalary" layoutX="163.0" layoutY="221.0" prefHeight="41.0" prefWidth="272.0" promptText="Salary...">
             <font>
                 <Font size="16.0" />
             </font>
         </TextField>
-        <Button onAction="#submit" layoutX="326.0" layoutY="300.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" text="Submit" textFill="#b92020">
+        <Button layoutX="249.0" layoutY="305.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="109.0" text="Submit" textFill="#b92020">
             <font>
                 <Font size="16.0" />
             </font>
         </Button>
-        <Button onAction="#backListTV" layoutX="31.0" layoutY="16.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+        <Button layoutX="31.0" layoutY="16.0" mnemonicParsing="false" onAction="#backListTV" text="&lt;&lt; Back" />
     </children>
 </Pane>

@@ -3,7 +3,6 @@ package projectJV2.dao.impls;
 
 import projectJV2.entities.ThuThang;
 import projectJV2.dao.interfaces.IRepository;
-import projectJV2.entities.ThuThang;
 import projectJV2.helper.Connector;
 
 import java.sql.ResultSet;
@@ -20,10 +19,11 @@ public class ThuThangRepository implements IRepository<ThuThang> {
             ResultSet rs = conn.query(sql_txt);
             while (rs.next()){
                 int id = rs.getInt("id");
+                int roleid = rs.getInt("roleid");
                 String role = rs.getString("role");
                 int income = rs.getInt("income");
-                Date date = rs.getDate("date");
-                ThuThang ct = new ThuThang(id,role,income,date);
+                String date = rs.getString( "date");
+                ThuThang ct = new ThuThang(id,roleid,role,income, String.valueOf(date));
                 ls.add(ct);
             }
 
@@ -36,12 +36,13 @@ public class ThuThangRepository implements IRepository<ThuThang> {
     @Override
     public boolean create(ThuThang ThuThang) {
         try {
-            String sql_txt = "insert into spending(role,spending,date) values(?,?,?)";
+            String sql_txt = "insert into imcome(roleid,role,income,date) values(?,?,?,?)";
             Connector conn = Connector.getInstance();
             ArrayList arr = new ArrayList();
             arr.add(ThuThang.getRole());
             arr.add(ThuThang.getIncome());
             arr.add(ThuThang.getDate());
+
             if(conn.execute(sql_txt,arr)) {
                 return true;
             }
@@ -99,8 +100,8 @@ public class ThuThangRepository implements IRepository<ThuThang> {
                 int Id = rs.getInt("id");
                 String role = rs.getString("role");
                 int income = rs.getInt("income");
-                Date date = rs.getDate("date");
-                return new ThuThang(id,role,income,date);
+                int date = rs.getInt("date");
+                return new ThuThang(id,role,income, String.valueOf(date));
 
             }
 

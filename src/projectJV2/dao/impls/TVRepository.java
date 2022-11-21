@@ -29,6 +29,22 @@ public class TVRepository implements IRepository<ThanhVien> {
         return ls;
     }
 
+    public int tongthu() {
+        int t = 0;
+        try {
+            String sql_txt = "select sum(salary) as tc from member ";
+            Connector conn = Connector.getInstance();
+            ResultSet rs = conn.query(sql_txt);
+            while (rs.next()){
+                t = rs.getInt("tc");
+            }
+
+        } catch (Exception e) {
+            System.out.println("ko dcc");
+        }
+        return t;
+    }
+
     @Override
     public boolean create(ThanhVien thanhVien) {
         try {

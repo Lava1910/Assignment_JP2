@@ -21,8 +21,9 @@ public class chiThangRepository implements IRepository<chiThang> {
             while (rs.next()){
                 int id = rs.getInt("id");
                 String sname = rs.getString("sname");
-                int spending = rs.getInt("spending");
                 String date = rs.getString("date");
+                int spending = rs.getInt("spending");
+
                 chiThang ct = new chiThang(id,sname,spending,date);
                 ls.add(ct);
             }
@@ -31,6 +32,22 @@ public class chiThangRepository implements IRepository<chiThang> {
             System.out.println(e.getMessage());
         }
         return ls;
+    }
+
+    public int tongchi() {
+        int tc = 0;
+        try {
+            String sql_txt = "select sum(spending) as tc from spending ";
+            Connector conn = Connector.getInstance();
+            ResultSet rs = conn.query(sql_txt);
+            while (rs.next()){
+                tc = rs.getInt("tc");
+            }
+
+        } catch (Exception e) {
+            System.out.println("ko dc");
+        }
+        return tc;
     }
 
     @Override
@@ -108,4 +125,5 @@ public class chiThangRepository implements IRepository<chiThang> {
         }
         return null;
     }
+
 }

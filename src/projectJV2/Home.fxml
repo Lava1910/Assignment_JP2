@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="625.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.HomeController">
     <children>
-        <Text layoutX="148.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text1" />
-        <Text layoutX="148.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text2" />
-        <Text layoutX="516.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text3" />
-        <Text layoutX="516.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text4" />
-        <Button onAction="#goToThanhVien" layoutX="222.0" layoutY="193.0" mnemonicParsing="false" text="Thành Viên Gia Đình" />
-        <Button onAction="#goToThemThu" layoutX="84.0" layoutY="280.0" mnemonicParsing="false" text="Thêm Thu" />
-        <Button onAction="#goToThemChi" layoutX="455.0" layoutY="280.0" mnemonicParsing="false" text="Thêm Chi" />
-        <Text fill="#da1111" layoutX="198.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản Lý Chi Tiêu">
+        <Button layoutX="225.0" layoutY="142.0" mnemonicParsing="false" onAction="#goToThanhVien" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Thành Viên" textFill="#ddf15d">
+         <font>
+             <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+        <Button layoutX="83.0" layoutY="342.0" mnemonicParsing="false" onAction="#goToThemThu" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Thêm Thu" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+        <Button layoutX="373.0" layoutY="342.0" mnemonicParsing="false" onAction="#goToThemChi" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Thêm Chi" textAlignment="CENTER" textFill="#ddf15d">
+         <font>
+             <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+        <Text fill="#da1111" layoutX="128.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Quản Lý Chi Tiêu" textAlignment="CENTER" underline="true" wrappingWidth="369.328125">
             <font>
-                <Font size="25.0" />
+                <Font name="Arial Bold" size="36.0" />
             </font>
         </Text>
-        <Button onAction="#goToThuNam" layoutX="37.0" layoutY="65.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Thu Năm :" />
-        <Button onAction="#goToChiNam" layoutX="37.0" layoutY="110.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Chi Năm :" />
-        <Button layoutX="393.0" layoutY="65.0" mnemonicParsing="false" onAction="#goToThuThang" prefHeight="31.0" prefWidth="102.0" text="Thu Tháng :" />
-        <Button onAction="#goToChiThang" layoutX="393.0" layoutY="110.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Chi Tháng :" />
+        <Button layoutX="83.0" layoutY="236.0" mnemonicParsing="false" onAction="#goToChiThang" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Chi Tháng " textFill="#ddf15d">
+         <font>
+             <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+        <Button layoutX="373.0" layoutY="236.0" mnemonicParsing="false" onAction="#goToSoDu" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Số dư" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+        <Button layoutX="225.0" layoutY="427.0" mnemonicParsing="false" onAction="#exit" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-color: black;" text="Exit" textFill="#ddf15d">
+         <font>
+             <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Text layoutX="215.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đối tượng: Hộ Gia đình">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@z3900113947209_426cfaabc938aa82bd3f85688e1a1eec.jpg" />
+         </image>
+      </ImageView>
     </children>
 </Pane>

@@ -4,9 +4,9 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class Connector {
-    public final static String connectionString = "jdbc:mysql://localhost:3306/assignment-jp2";
+    public final static String connectionString = "jdbc:mysql://localhost:3306/sql_family";
     public final static String user = "root";
-    public final static String pwd = "";// neu la xampp: "" , mamp: "root"
+    public final static String pwd = "";
 
     Connection conn;
 
@@ -38,15 +38,6 @@ public class Connector {
         }catch (Exception e){
             return null;
         }
-    }
-
-    public boolean executeQuery(String sql){
-        try {
-            getStatement().execute(sql);
-        }catch (Exception e){
-            return false;
-        }
-        return true;
     }
 
     public PreparedStatement getPreparedStatement(String sql) throws Exception{

@@ -11,9 +11,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 import projectJV2.Main;
 import projectJV2.dao.impls.TVRepository;
+import projectJV2.dao.impls.chiThangRepository;
 import projectJV2.entities.ThanhVien;
+import projectJV2.entities.chiThang;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,6 +28,9 @@ public class ThanhVienController implements Initializable {
     public TableColumn<ThanhVien, String> tdRole;
     public TableColumn<ThanhVien, Integer> tdSalary;
     public TableColumn<ThanhVien, Button> txtEdit;
+    public Text txtTongThu;
+
+    ObservableList<ThanhVien> ls = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -37,12 +43,14 @@ public class ThanhVienController implements Initializable {
         TVRepository rp = new TVRepository();
         ls.addAll(rp.all());
         tbThanhVien.setItems(ls);
+        txtTongThu.setText(String.valueOf(hienthitong()));
+
     }
 
     public void backToHome4(ActionEvent actionEvent) throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/Home.fxml"));
         Main.rootStage.setTitle("Quản Lý Chi Tieu");
-        Main.rootStage.setScene(new Scene(listChi,600,400));
+        Main.rootStage.setScene(new Scene(listChi,625,573));
     }
 
 
@@ -52,6 +60,18 @@ public class ThanhVienController implements Initializable {
         Main.rootStage.setScene(new Scene(listChi,800,600));
     }
 
+    public int sum(){
+        int sum = 0;
+        for(ThanhVien t : ls){
+            sum = sum + t.getSalary();
+        }
+        return sum;
+    }
+    public int hienthitong(){
+        TVRepository rp = new TVRepository();
+        int t=rp.tongthu();
+        return t;
+    }
 
 
 

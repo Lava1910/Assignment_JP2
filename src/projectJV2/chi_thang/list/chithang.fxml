@@ -5,23 +5,32 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.list.chiThangController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.list.chiThangController">
    <children>
-      <Text fill="#f50a0a" layoutX="244.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi Tháng">
+      <Text fill="#f50a0a" layoutX="383.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi Tháng">
          <font>
             <Font size="25.0" />
          </font>
       </Text>
-      <TableView fx:id="tbChiThang" layoutX="15.0" layoutY="89.0" prefHeight="296.0" prefWidth="674.0">
+      <TableView fx:id="tbChiThang" layoutX="14.0" layoutY="88.0" prefHeight="296.0" prefWidth="850.0">
         <columns>
-          <TableColumn fx:id="tdId" prefWidth="64.0" text="id" />
-          <TableColumn fx:id="tdSName" prefWidth="238.0" text="sname" />
-            <TableColumn fx:id="tdSpending" prefWidth="147.0" text="spending" />
-            <TableColumn fx:id="tdDate" prefWidth="124.0" text="date" />
-            <TableColumn fx:id="tdEdit" minWidth="0.0" prefWidth="95.0" text="Action" />
+            <TableColumn fx:id="tdId" prefWidth="49.0" text="id" />
+            <TableColumn fx:id="tdMember" prefWidth="190.0" text="Member" />
+          <TableColumn fx:id="tdSName" prefWidth="231.0" text="sname" />
+            <TableColumn fx:id="tdSpending" prefWidth="155.0" text="spending" />
+            <TableColumn fx:id="tdDate" prefWidth="140.0" text="date" />
+            <TableColumn fx:id="tdEdit" minWidth="0.0" prefWidth="84.0" text="Action" />
         </columns>
       </TableView>
       <Button layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#backToHome2" text="Back" />
-      <Button layoutX="535.0" layoutY="47.0" mnemonicParsing="false" onAction="#addChiThang" prefHeight="31.0" prefWidth="51.0" text="Add" />
+      <Button layoutX="798.0" layoutY="47.0" mnemonicParsing="false" onAction="#addChiThang" prefHeight="31.0" prefWidth="51.0" text="Add" />
+      <Text layoutX="323.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng Chi :">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fx:id="txtTongChi" layoutX="455.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
    </children>
 </Pane>

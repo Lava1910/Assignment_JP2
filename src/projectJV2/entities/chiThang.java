@@ -76,6 +76,9 @@ public class chiThang {
 
         return edit;
     }
+    public  String toString() {
+        return getSname();
+    }
 }
 
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.them_thu.ThemThuController">
+   <children>
+      <Text fill="#dd1111" layoutX="206.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Khoản Thu">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtThanhVien" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="217.0" />
+      <TextField fx:id="txtSoTien" layoutX="206.0" layoutY="185.0" prefHeight="31.0" prefWidth="217.0" />
+      <Text layoutX="74.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên" />
+      <Text layoutX="74.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền" />
+      <Text layoutX="74.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
+      <Button layoutX="27.0" layoutY="58.0" mnemonicParsing="false" onAction="#backToThuThang" text="Back" />
+      <Button layoutX="268.0" layoutY="305.0" mnemonicParsing="false" onAction="#submmit" text="Thêm" />
+      <TextField fx:id="txtNgay" layoutX="206.0" layoutY="248.0" prefHeight="31.0" prefWidth="217.0" />
+   </children>
+</Pane>
