@@ -5,23 +5,52 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.edit.EditChiThangController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.edit.EditChiThangController">
    <children>
-      <Text fill="#f80f0f" layoutX="209.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Khoản Chi">
+      <Text fill="#f80f0f" layoutX="307.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thay đổi" underline="true">
          <font>
-            <Font size="25.0" />
+            <Font name="Arial Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="txtSName" layoutX="207.0" layoutY="137.0" prefHeight="31.0" prefWidth="217.0" />
-      <TextField fx:id="txtSpending" layoutX="207.0" layoutY="195.0" prefHeight="31.0" prefWidth="217.0" />
-      <Text layoutX="104.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khoản Chi" />
-      <Text layoutX="104.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền" />
-      <Text layoutX="109.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày " />
-      <Button layoutX="25.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToChiThang" prefHeight="31.0" prefWidth="57.0" text="Back" />
-      <Button layoutX="342.0" layoutY="300.0" mnemonicParsing="false" onAction="#Submit" prefHeight="37.0" prefWidth="97.0" text="Submit" textFill="RED" />
+      <TextField fx:id="txtSName" layoutX="491.0" layoutY="237.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="txtSpending" layoutX="491.0" layoutY="315.0" prefHeight="40.0" prefWidth="250.0" />
+      <Text layoutX="224.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khoản Chi">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Text layoutX="241.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Text layoutX="250.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày ">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Button layoutX="107.0" layoutY="93.0" mnemonicParsing="false" onAction="#backToChiThang" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Back" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="568.0" layoutY="462.0" mnemonicParsing="false" onAction="#Submit" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Lưu" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
 
-      <Button layoutX="152.0" layoutY="300.0" mnemonicParsing="false" onAction="#delete" prefHeight="37.0" prefWidth="109.0" text="Delete" textFill="#e40505" /><TextField fx:id="txtDate" layoutX="207.0" layoutY="249.0" prefHeight="31.0" prefWidth="217.0" />
-      <Text layoutX="98.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên " />
-      <ComboBox layoutX="207.0" layoutY="84.0" prefHeight="31.0" prefWidth="217.0" />
+      <Button layoutX="186.0" layoutY="462.0" mnemonicParsing="false" onAction="#delete" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Xóa" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDate" layoutX="491.0" layoutY="387.0" prefHeight="40.0" prefWidth="250.0" />
+      <Text layoutX="218.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên ">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <ComboBox layoutX="491.0" layoutY="163.0" prefHeight="40.0" prefWidth="250.0" />
    </children>
 </Pane>

@@ -30,7 +30,7 @@ public class chiThang {
             try {
                 EditChiThangController.editedChiThang = this;
                 Parent edit = FXMLLoader.load(getClass().getResource("../chi_thang/edit/editChiThang.fxml"));
-                Main.rootStage.setScene(new Scene(edit,800,600));
+                Main.rootStage.setScene(new Scene(edit,900,600));
             }catch (Exception e){
                 System.out.println(e.getMessage());
             }

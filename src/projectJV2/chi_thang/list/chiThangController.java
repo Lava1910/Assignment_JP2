@@ -61,7 +61,7 @@ public class chiThangController implements Initializable {
     public void addChiThang(ActionEvent actionEvent) throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/them_chi/themchithang/themchithang.fxml"));
         Main.rootStage.setTitle("Thêm Khoản Chi");
-        Main.rootStage.setScene(new Scene(listChi,800,600));
+        Main.rootStage.setScene(new Scene(listChi,900,600));
     }
     public int sum(){
         int sum = 0;

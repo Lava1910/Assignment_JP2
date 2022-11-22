@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import projectJV2.Main;
-import projectJV2.thanh_vien.create.CreateTVController;
 import projectJV2.thanh_vien.edit.TVEditController;
 
 public class ThanhVien {

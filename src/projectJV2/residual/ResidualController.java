@@ -9,10 +9,6 @@ import javafx.scene.text.Text;
 import projectJV2.Main;
 import projectJV2.dao.impls.TVRepository;
 import projectJV2.dao.impls.chiThangRepository;
-import projectJV2.entities.ThanhVien;
-import projectJV2.entities.chiThang;
-import projectJV2.thanh_vien.list.ThanhVienController;
-import projectJV2.them_chi.themchithang.ThemchiThangCotroller;
 
 import java.net.URL;
 import java.util.ResourceBundle;

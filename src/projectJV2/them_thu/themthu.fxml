@@ -5,20 +5,38 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.them_thu.ThemThuController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="779.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.them_thu.ThemThuController">
    <children>
-      <Text fill="#dd1111" layoutX="206.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Khoản Thu">
+      <Text fill="#dd0f0f" layoutX="251.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm khoản thu" underline="true">
          <font>
-            <Font size="25.0" />
+            <Font name="Arial Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="txtThanhVien" layoutX="206.0" layoutY="119.0" prefHeight="31.0" prefWidth="217.0" />
-      <TextField fx:id="txtSoTien" layoutX="206.0" layoutY="185.0" prefHeight="31.0" prefWidth="217.0" />
-      <Text layoutX="74.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên" />
-      <Text layoutX="74.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền" />
-      <Text layoutX="74.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
-      <Button layoutX="27.0" layoutY="58.0" mnemonicParsing="false" onAction="#backToThuThang" text="Back" />
-      <Button layoutX="268.0" layoutY="305.0" mnemonicParsing="false" onAction="#submmit" text="Thêm" />
-      <TextField fx:id="txtNgay" layoutX="206.0" layoutY="248.0" prefHeight="31.0" prefWidth="217.0" />
+      <TextField fx:id="txtThanhVien" layoutX="404.0" layoutY="160.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="txtSoTien" layoutX="404.0" layoutY="228.0" prefHeight="40.0" prefWidth="250.0" />
+      <Text layoutX="180.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="180.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="180.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="111.0" layoutY="95.0" mnemonicParsing="false" onAction="#backToThuThang" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Back" textFill="#ddf15d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="480.0" layoutY="384.0" mnemonicParsing="false" onAction="#submmit" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Thêm" textFill="#ddf15d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="txtNgay" layoutX="404.0" layoutY="294.0" prefHeight="40.0" prefWidth="250.0" />
    </children>
 </Pane>

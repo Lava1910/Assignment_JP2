@@ -5,22 +5,45 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.them_chi.themchithang.ThemchiThangCotroller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.them_chi.themchithang.ThemchiThangCotroller">
    <children>
-      <Text fill="#f80f0f" layoutX="209.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Khoản Chi">
+      <Text fill="#f80f0f" layoutX="307.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Khoản Chi" underline="true">
          <font>
-            <Font size="25.0" />
+            <Font name="Arial Bold" size="36.0" />
          </font>
       </Text>
-      <ComboBox fx:id="cbMember" layoutX="207.0" layoutY="103.0" prefHeight="31.0" prefWidth="217.0" />
-      <TextField fx:id="txtSName" layoutX="207.0" layoutY="157.0" prefHeight="31.0" prefWidth="217.0" />
-      <TextField fx:id="txtSpend" layoutX="207.0" layoutY="209.0" prefHeight="31.0" prefWidth="217.0" />
-      <Text layoutX="90.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khoản Chi" />
-      <Text layoutX="90.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền" />
-      <Text layoutX="94.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày " />
-      <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToChiThang" prefHeight="31.0" prefWidth="57.0" text="Back" />
-      <Button layoutX="271.0" layoutY="318.0" mnemonicParsing="false" onAction="#Submit" text="Thêm" />
-      <TextField fx:id="txtDate" layoutX="207.0" layoutY="260.0" prefHeight="31.0" prefWidth="217.0" />
-      <Text layoutX="86.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên" />
+      <ComboBox fx:id="cbMember" layoutX="460.0" layoutY="166.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="txtSName" layoutX="460.0" layoutY="232.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="txtSpend" layoutX="460.0" layoutY="301.0" prefHeight="40.0" prefWidth="250.0" />
+      <Text layoutX="215.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khoản Chi">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Text layoutX="231.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số Tiền">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Text layoutX="238.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày ">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font>
+      </Text>
+      <Button layoutX="106.0" layoutY="94.0" mnemonicParsing="false" onAction="#backToChiThang" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Back" textFill="#ddf15d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="536.0" layoutY="445.0" mnemonicParsing="false" onAction="#Submit" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Thêm" textFill="#ddf15d">
+      <font>
+         <Font name="Arial Bold" size="18.0" />
+      </font>
+      </Button>
+      <TextField fx:id="txtDate" layoutX="460.0" layoutY="366.0" prefHeight="40.0" prefWidth="250.0" />
+      <Text layoutX="210.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên">
+      <font>
+         <Font name="System Italic" size="24.0" />
+      </font></Text>
    </children>
 </Pane>

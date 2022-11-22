@@ -5,32 +5,45 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.list.chiThangController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #fabc94; -fx-border-color: black; -fx-border-width: 2.5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJV2.chi_thang.list.chiThangController">
    <children>
-      <Text fill="#f50a0a" layoutX="383.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi Tháng">
+      <Text fill="#dd0f0f" layoutX="362.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi Tháng" underline="true">
          <font>
-            <Font size="25.0" />
+             <Font name="Arial Bold" size="36.0" />
          </font>
       </Text>
-      <TableView fx:id="tbChiThang" layoutX="14.0" layoutY="88.0" prefHeight="296.0" prefWidth="850.0">
+      <TableView fx:id="tbChiThang" layoutX="25.0" layoutY="146.0" prefHeight="296.0" prefWidth="850.0">
         <columns>
-            <TableColumn fx:id="tdId" prefWidth="49.0" text="id" />
-            <TableColumn fx:id="tdMember" prefWidth="190.0" text="Member" />
-          <TableColumn fx:id="tdSName" prefWidth="231.0" text="sname" />
-            <TableColumn fx:id="tdSpending" prefWidth="155.0" text="spending" />
-            <TableColumn fx:id="tdDate" prefWidth="140.0" text="date" />
+            <TableColumn fx:id="tdId" prefWidth="49.0" text="STT" />
+            <TableColumn fx:id="tdMember" prefWidth="160.0" text="Vị trí" />
+          <TableColumn fx:id="tdSName" prefWidth="261.0" text="Tên khoản chi" />
+            <TableColumn fx:id="tdSpending" prefWidth="155.0" text="Số tiền" />
+            <TableColumn fx:id="tdDate" prefWidth="140.0" text="Ngày" />
             <TableColumn fx:id="tdEdit" minWidth="0.0" prefWidth="84.0" text="Action" />
         </columns>
       </TableView>
-      <Button layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#backToHome2" text="Back" />
-      <Button layoutX="798.0" layoutY="47.0" mnemonicParsing="false" onAction="#addChiThang" prefHeight="31.0" prefWidth="51.0" text="Add" />
-      <Text layoutX="323.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng Chi :">
+      <Button layoutX="25.0" layoutY="84.0" mnemonicParsing="false" onAction="#backToHome2" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Back" textFill="#ddf15d">
+          <font>
+              <Font name="Arial Bold" size="18.0" />
+          </font>
+      </Button>
+      <Button layoutX="742.0" layoutY="84.0" mnemonicParsing="false" onAction="#addChiThang" prefHeight="35.0" prefWidth="133.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-style: dotted;" text="Thêm mới" textFill="#ddf15d">
+          <font>
+              <Font name="Arial Bold" size="18.0" />
+          </font>
+      </Button>
+      <Text layoutX="216.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng Chi :">
          <font>
-            <Font size="20.0" />
+             <Font name="System Italic" size="24.0" />
          </font></Text>
-      <Text fx:id="txtTongChi" layoutX="455.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="txtTongChi" layoutX="356.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
-            <Font size="20.0" />
+             <Font name="System Italic" size="24.0" />
          </font></Text>
+      <Text layoutX="559.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VND">
+          <font>
+              <Font name="System Italic" size="24.0" />
+          </font>
+      </Text>
    </children>
 </Pane>

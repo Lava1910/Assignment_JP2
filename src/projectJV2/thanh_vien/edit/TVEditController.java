@@ -6,7 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import projectJV2.Main;
@@ -50,7 +49,7 @@ public class TVEditController implements Initializable {
     }
 
     public void backList(ActionEvent actionEvent) throws Exception{
-        Parent listChi = FXMLLoader.load(getClass().getResource("../list/thanhvien.fxml"));
+        Parent listChi = FXMLLoader.load(getClass().getResource("../list/ThanhVien.fxml"));
         Main.rootStage.setTitle("member");
         Main.rootStage.setScene(new Scene(listChi,779,588));
     }

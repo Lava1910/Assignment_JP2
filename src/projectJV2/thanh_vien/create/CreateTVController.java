@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import projectJV2.Main;
 import projectJV2.dao.impls.TVRepository;
 import projectJV2.entities.ThanhVien;
@@ -35,7 +34,7 @@ public class CreateTVController {
 
 
     public void backListTV() throws Exception{
-        Parent listChi = FXMLLoader.load(getClass().getResource("../list/thanhvien.fxml"));
+        Parent listChi = FXMLLoader.load(getClass().getResource("../list/ThanhVien.fxml"));
         Main.rootStage.setTitle("member");
         Main.rootStage.setScene(new Scene(listChi,779,588));
     }
