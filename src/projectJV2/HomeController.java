@@ -31,7 +31,7 @@ public class HomeController {
     public void goToThemThu(ActionEvent actionEvent) throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("them_thu/themthu.fxml"));
         Main.rootStage.setTitle("Thêm Khoản Thu");
-        Main.rootStage.setScene(new Scene(listChi,900,600));
+        Main.rootStage.setScene(new Scene(listChi,779,588));
     }
 
     public void goToSoDu(ActionEvent actionEvent) throws Exception{

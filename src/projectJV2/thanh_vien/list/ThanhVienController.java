@@ -55,7 +55,7 @@ public class ThanhVienController implements Initializable {
     public void addTV(ActionEvent actionEvent) throws Exception{
         Parent listChi = FXMLLoader.load(getClass().getResource("/projectJV2/thanh_vien/create/CreateTV.fxml"));
         Main.rootStage.setTitle("member");
-        Main.rootStage.setScene(new Scene(listChi,800,600));
+        Main.rootStage.setScene(new Scene(listChi,779,588));
     }
 
     public int sum(){
